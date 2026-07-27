@@ -1,5 +1,10 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
+
+        # We cannot start from both ends because there is no safe rule
+        # for deciding which pointer to move. A bad profit could be caused
+        # by either a poor buying price or a poor selling price.
+        
         j = 0
         maxProfit = 0
 
